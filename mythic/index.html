@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./Images/favicon-32*32.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <title>Mythic Wear</title>
+</head>
+<body>
+   <header class="header">
+    <nav class="navbar">
+        <div class="row container d-flex">
+          <div class="logo">
+            <img src="./Images/Logo.jpg" alt="Mythic Wear Logo">
+          </div>
+          <header>MYTHIC WEAR</header>
+      
+          <div class="nav-list d-flex">
+            <a href="#design-ideas">Design Ideas</a>
+            <a href="#new-arrivals">New Arrivals</a>
+            <a href="#contacts">Contacts</a>
+            
+          </div>
+      
+          <div class="hamburger">
+            <i class='bx bx-menu-alt-right'></i>
+          </div>
+        </div>
+      </nav>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+  const navList = document.querySelector('.nav-list');
+  const closeBtn = document.querySelector('.Close');
+  const hamburgerBtn = document.querySelector('.hamburger');
+
+  hamburgerBtn.addEventListener('click', () => {
+    navList.classList.toggle('show');
+  });
+
+  
+});
+      </script>
+    
+  
+  
+    
+    <div class="hero">
+        <div class="row container d-flex">
+            <div class="col">
+                <h2>Built by dreamers for dreamers</h2>
+                <h1>About Us</h1>
+                <p>Mythic Wear is a premium branding service specializing in crafting unique, 
+                    compelling brand identities for fashion and apparel businesses. We combine creativity with 
+                    strategic insights to design memorable logos, impactful visual assets, and cohesive brand 
+                    narratives that resonate with target audiences. Our mission is to elevate brands to mythic
+                    status, ensuring they stand out in the competitive fashion industry through distinctive, 
+                    high-quality branding solutions.</p>
+            </div>
+        <img src="" alt=""/>
+        </div>
+     </div>
+ </header>
+    
+<section id="design-ideas" class="design-ideas-section">
+    <div class="col">
+        <div class="design-ideas-container">
+            <h4 id="design-ideas-title"><span>Design Ideas</span></h4>
+            <div id="design-ideas-list" class="design-ideas-list">
+                <a class="pm" href="#" onclick="filterProducts('Promotional Merchandise')">Promotional Merchandise</a>
+                <a href="#" onclick="filterProducts('Events')">Events</a>
+                <a href="#" onclick="filterProducts('Corporate Gifts')">Corporate Gifts</a>
+                <a href="#" onclick="filterProducts('Branding Basics')">Branding Basics</a>
+           
+            </div>
+        </div>
+    </div>
+
+    <div class="products container" id="products-container">
+        <!-- Products will be injected here -->
+    </div>
+</section>
+
+
+<section id="new-arrivals" class="section new-arrival">
+    
+    <div class="title">
+        <header >New Arrivals</header>
+    <div class="grid-container">
+    <div class="title" onclick="toggleHoodies()">
+        <p id="hood">HOODIES</p>
+    </div>
+    <div class="hoodies flex-container">
+        <div class="hood hidden">
+            <img src="./Images/patrick.jpg" alt="Hoodie 1">
+            <p>KES 3000</p>
+            <button onclick="buyNow('hood1')">Buy Now</button>
+        </div>
+        <div class="hood hidden">
+            <img src="./Images/spongebob.jpg" alt="Hoodie 2">
+            <p>KES 3000</p>
+            <button onclick="buyNow('hood2')">Buy Now</button>
+        </div>
+        <div class="hood hidden">
+            <img src="./Images/frozen.jpg" alt="Hoodie 3">
+            <p>KES 3000</p>
+            <button onclick="buyNow('hood3')">Buy Now</button>
+        </div>
+        <div class="hood hidden">
+            <img src="./Images/heart.jpg" alt="Hoodie 4">
+            <p>KES 3000</p>
+            <button onclick="buyNow('hood4')">Buy Now</button>
+        </div>
+        <div class="hood hidden">
+            <img src="./Images/tenta.jpg" alt="Hoodie 5">
+            <p>KES 3000</p>
+            <button onclick="buyNow('hood5')">Buy Now</button>
+        </div>
+        <div class="hood hidden">
+            <img src="./Images/mine.jpg" alt="Hoodie 6">
+            <p>KES 3000</p>
+            <button onclick="buyNow('hood6')">Buy Now</button>
+        </div>
+        <div class="hood hidden">
+            <img src="./Images/username.jpg" alt="Hoodie 7">
+            <p>KES 3000</p>
+            <button onclick="buyNow('hood7')">Buy Now</button>
+        </div>
+    </div>
+
+
+<script>
+    function toggleHoodies() {
+        const hoodies = document.querySelectorAll('.hoodies .hood');
+        hoodies.forEach(hood => {
+            hood.classList.toggle('hidden');
+        });
+    }
+
+    function buyNow(itemId) {
+        alert(`Buying ${itemId}`);
+    }
+</script>
+    
+<!-- Caps -->
+<div class="title" onclick="toggleCaps()">
+    <p id="caps">CAPS</p>
+</div>
+
+<div class="caps flex-container hidden">
+    <div class="cap">
+        <img src="./Images/cap1.jpg" alt="Cap 1">
+        <p>KES 1600</p>
+        <button onclick="buyNow('cap1')">Buy Now</button>
+    </div>
+    <div class="cap">
+        <img src="./Images/cap2.jpg" alt="Cap 2">
+        <p>KES 1600</p>
+        <button onclick="buyNow('cap2')">Buy Now</button>
+    </div>
+    <div class="cap">
+        <img src="./Images/cap3.jpg" alt="Cap 3">
+        <p>KES 1600</p>
+        <button onclick="buyNow('cap3')">Buy Now</button>
+    </div>
+    <div class="cap">
+        <img src="./Images/cap4.jpg" alt="Cap 4">
+        <p>KES 1600</p>
+        <button onclick="buyNow('cap4')">Buy Now</button>
+    </div>
+    <div class="cap">
+        <img src="./Images/cap5.jpg" alt="Cap 5">
+        <p>KES 1600</p>
+        <button onclick="buyNow('cap5')">Buy Now</button>
+    </div>
+    <div class="cap">
+        <img src="./Images/cap6.jpg" alt="Cap 6">
+        <p>KES 1600</p>
+        <button onclick="buyNow('cap6')">Buy Now</button>
+    </div>
+    <div class="cap">
+        <img src="./Images/cap7.jpg" alt="Cap 7">
+        <p>KES 1600</p>
+        <button onclick="buyNow('cap7')">Buy Now</button>
+    </div>
+</div>
+
+<script>
+    function toggleCaps() {
+        const capsContainer = document.querySelector('.caps');
+        capsContainer.classList.toggle('hidden');
+    }
+
+    function buyNow(itemId) {
+        alert(`Buying ${itemId}`);
+    }
+</script> 
+    
+    
+    
+    
+    
+    <!-- shirts -->
+          <div class="title" onclick="toggleShirts()">
+            <p id="shirts">T-Shirts</p>
+        </div>
+        <div class="shirts flex-container">
+            <div class="shirt1 hidden">
+                <img src="./Images/shirt1.jpg" alt="Shirt 1">
+                <p>KES 1100</p>
+                <button onclick="buyNow('shirt1')">Buy Now</button>
+            </div>
+            <div class="shirt1 hidden">
+                <img src="./Images/shirt2.jpg" alt="Shirt 2">
+                <p>KES 1100</p>
+                <button onclick="buyNow('shirt2')">Buy Now</button>
+            </div>
+            <div class="shirt1 hidden">
+                <img src="./Images/shirt3.jpg" alt="Shirt 3">
+                <p>KES 1100</p>
+                <button onclick="buyNow('shirt3')">Buy Now</button>
+            </div>
+            <div class="shirt1 hidden">
+                <img src="./Images/shirt4.jpg" alt="Shirt 4">
+                <p>KES 1100</p>
+                <button onclick="buyNow('shirt4')">Buy Now</button>
+            </div>
+            <div class="shirt1 hidden">
+                <img src="./Images/shirt5.jpg" alt="Shirt 5">
+                <p>KES 1100</p>
+                <button onclick="buyNow('shirt5')">Buy Now</button>
+            </div>
+            <div class="shirt1 hidden">
+                <img src="./Images/shirt6.jpg" alt="Shirt 6">
+                <p>KES 1100</p>
+                <button onclick="buyNow('shirt6')">Buy Now</button>
+            </div>
+            <div class="shirt1 hidden">
+                <img src="./Images/shirt7.jpg" alt="Shirt 7">
+                <p>KES 1100</p>
+                <button onclick="buyNow('shirt7')">Buy Now</button>
+            </div>
+        </div>
+    <!-- </section> -->
+
+    <script>
+        function toggleShirts() {
+            const shirts = document.querySelectorAll('.shirts .shirt1');
+            shirts.forEach(shirt => {
+                shirt.classList.toggle('hidden');
+            });
+        }
+
+        function buyNow(itemId) {
+            alert(`Buying ${itemId}`);
+        }
+    </script>
+    </div>
+ </section>
+
+<div id="contacts">
+    <h4>Contact Us</h4>
+    <div class="d-flex">
+        <div class="icon"><i class="bx bxs-envelope"></i></div>
+        <span>Mythicwear@gmail.com</span>
+    </div>
+    <div></div>
+    <div class="d-flex">
+        <div class="icon"><i class="bx bxs-phone"></i></div>
+        <span>12345678</span><br>
+        <span>12345678</span>
+    </div>
+    <div id="footer">
+        <p style="color: black;">&copy: by Byrone| All Rights Reserved</p>
+
+    </div>
+</div>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 10000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+<script>
+// Sample products JSON data
+const products = [
+    //promotional merchandise
+    {
+        "id": 1,
+        "title": "T-Shirt",
+        "price": "1100",
+        "url": "./Images/shirt1.jpg",
+        "category": "Promotional Merchandise"
+    },
+    {
+        "id": 2,
+        "title": "T-Shirt",
+        "price": "1100",
+        "url": "./Images/shirt3.jpg",
+        "category": "Promotional Merchandise"
+    },
+    {
+        "id": 3,
+        "title": "Cap",
+        "price": "1100",
+        "url": "./Images/cap5.jpg",
+        "category": "Promotional Merchandise"
+    },
+    {
+        "id": 4,
+        "title": "Cap",
+        "price": "1100",
+        "url": "./Images/cap2.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 5,
+        "title": "Hood",
+        "price": "1100",
+        "url": "./Images/patrick.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 6,
+        "title": "Hood",
+        "price": "1100",
+        "url": "./Images/spongebob.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 7,
+        "title": "Bag",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/15/50/43/155043ebee51838b69ab0122d46e4d01.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 8,
+        "title": "Bag",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/fb/e2/85/fbe2859af6c1d1fab3d2e816e529b2a2.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 9,
+        "title": "Bag",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/57/02/49/570249b850e97d410e24b08cf33ed18c.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 10,
+        "title": "Bag",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/59/a1/15/59a11557cb1d47d1fdbd9aae7761e13b.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 11,
+        "title": "Blouse",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/80/20/4a/80204a1489e9910800adb6efbf3aeffd.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 12,
+        "title": "Blouse",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/31/5f/f3/315ff3c49a7935ff267269e002560ac8.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 13,
+        "title": "Blouse",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/80/be/a7/80bea7bd7462ad2548493512c17559a3.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 14,
+        "title": "Blouse",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/cc/ff/32/ccff32221072df4cf7f3416dfb46a498.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 15,
+        "title": "Blouse",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/6a/d7/e1/6ad7e1282ca438be10136d4b5314e5e2.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 16,
+        "title": "Crop Tops",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/2d/9b/26/2d9b26553196648054f5d9cbbb753a4a.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 17,
+        "title": "Crop Tops",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/fd/2d/18/fd2d1846a8fb40ad3b3a896db018e1f0.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 18,
+        "title": "Crop Tops",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/5e/8a/57/5e8a57e22daa0c6a375c2adfb76a4b7f.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 19,
+        "title": "Crop Tops",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/54/31/12/543112d61735e44851c37edff2bee651.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 20,
+        "title": "Crop Tops",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/d1/5f/55/d15f5592533a8c0208ef67ea86aae147.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 21,
+        "title": "Crop Tops",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/33/a6/bb/33a6bb92de80b2f6d6df4d92c8255216.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 22,
+        "title": "Crop Sweater",
+        "price": "1100",
+        "url": "https://i.pinimg.com/564x/f8/43/4b/f8434b972496c3652e84fe42d288dc98.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 23,
+        "title": "Crop Sweater",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/a8/cc/54/a8cc540bd6ee7b50bfe3d42a3d4b8bdd.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 24,
+        "title": "Crop Sweater",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/da/20/c3/da20c3f641a9d7191a06f0a3ff8e636b.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 25,
+        "title": "Crop Sweater",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/d9/2c/ac/d92cacfaf65fe39ff8c8d9c69839be3e.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 26,
+        "title": "Crop Sweater",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/27/13/90/271390ca81897fb81422431589b73907.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 27,
+        "title": "Crop Sweater",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/b0/a8/8e/b0a88e0a554f1dc20f1caa387395da13.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 28,
+        "title": "Headwear",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/c0/87/2f/c0872f2fb0d0c7b8fb94f4ea5834a0bd.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 29,
+        "title": "Headwear",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/88/49/61/884961d7873d8cea55a4943e967490ff.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 30,
+        "title": "Headwear",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/65/b5/e0/65b5e075f46a8361b329cb97a7250989.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 31,
+        "title": "Headwear",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/b7/a9/e8/b7a9e81fd177c20ef195ebba724c408d.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 32,
+        "title": "Headwear",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/25/ce/65/25ce651cf04cd36957867983e9b5177e.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 33,
+        "title": "Headwear",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/97/a2/3e/97a23ef20d8b4a7feb9d9e57ffe94f89.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 34,
+        "title": "Bottles",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/ea/27/3f/ea273f7e6b3c6c71e0b1a4bacee4f4fd.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 35,
+        "title": "Bottles",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/ad/28/c0/ad28c01431da9e9b2a35451bb3609a9a.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 36,
+        "title": "Bottles",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/a2/4b/7e/a24b7e243755d84d936a17832dfa6cb9.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 37,
+        "title": "Bottles",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/fe/15/bb/fe15bbb011e38f9104e749d2ffedf62d.jpg",
+        "category": "Promotional Merchandise"
+    },
+    {
+        "id": 38,
+        "title": "Mugs",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/88/6f/02/886f02e6ca4f7b172f227fe215165032.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 39,
+        "title": "Mugs",
+        "price": "1100",
+        "url": "https://i.pinimg.com/564x/30/34/41/303441bcb2f95979a54c0ad7735d1396.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 40,
+        "title": "Mugs",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/bf/1e/c7/bf1ec72130836ceb925be00570c57e4b.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 41,
+        "title": "Mugs",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/63/90/50/639050d66705070318f76470d271b9cf.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 42,
+        "title": "Mugs",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/78/dd/e6/78dde6acd896700ee4d2171c689e1c78.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 43,
+        "title": "Mugs",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/fa/29/20/fa292073229fdf4b2d48cb93b34a6438.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 44,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/f5/2a/53/f52a5365a4380461d53fcdf55d079d0d.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 45,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/fb/e3/06/fbe306fa0bfcd0a1de9b3c3d5c5a31e1.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 46,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/bc/f0/f4/bcf0f4129505a08fda350adfe158d019.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 47,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/c4/9d/b5/c49db5c6d621d3d4f5b891f6233f354f.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 48,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/db/c3/91/dbc3911329b586c69d68d68b0eaf507e.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 49,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/e7/86/dc/e786dc2636be3d446c3669bfd91b5bbf.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 50,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/77/a7/da/77a7da9942aa4a463725b71e65f3ce9b.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 51,
+        "title":"Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/17/2c/1f/172c1fae477bfa2cd2c7b2655165981e.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 52,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/b6/2b/5f/b62b5f29df60de22234eb073114f92ec.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 53,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/b0/11/bc/b011bce00aaf8e385ddddf3cfcb4481b.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 54,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/d0/4d/b7/d04db7869c8ca5691bfdb17a0407749e.jpg",
+        "category": "Promotional Merchandise"
+    },
+    {
+        "id": 55,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/48/7c/8b/487c8b6f92c6b35f68a818b09a097783.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 56,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/e7/15/eb/e715ebfec08f4cceef84d3001d41c8ac.jpg",
+        "category": "Promotional Merchandise"
+    },{
+        "id": 57,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/3b/75/65/3b756521cbdcc06fdfd8d2ded13dac52.jpg",
+        "category": "Promotional Merchandise"
+    },
+    {
+        "id": 58,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/6e/c7/ee/6ec7eeb2829f59f9a724742965b2e791.jpg",
+        "category": "Promotional Merchandise"
+    },
+    
+  
+    // events
+    {
+        "id": 1,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/d0/4d/b7/d04db7869c8ca5691bfdb17a0407749e.jpg",
+        "category": "Events"
+    },
+    {
+        "id": 2,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/48/7c/8b/487c8b6f92c6b35f68a818b09a097783.jpg",
+        "category": "Events"
+    },{
+        "id": 3,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/e7/15/eb/e715ebfec08f4cceef84d3001d41c8ac.jpg",
+        "category": "Events"
+    },{
+        "id": 4,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/3b/75/65/3b756521cbdcc06fdfd8d2ded13dac52.jpg",
+        "category": "Events"
+    },
+    {
+        "id": 5,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/6e/c7/ee/6ec7eeb2829f59f9a724742965b2e791.jpg",
+        "category": "Events"
+    },{
+        "id": 6,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/f5/2a/53/f52a5365a4380461d53fcdf55d079d0d.jpg",
+        "category": "Events"
+    },{
+        "id": 7,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/fb/e3/06/fbe306fa0bfcd0a1de9b3c3d5c5a31e1.jpg",
+        "category": "Events"
+    },{
+        "id": 8,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/bc/f0/f4/bcf0f4129505a08fda350adfe158d019.jpg",
+        "category": "Events"
+    },{
+        "id": 9,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/c4/9d/b5/c49db5c6d621d3d4f5b891f6233f354f.jpg",
+        "category": "Events"
+    },{
+        "id": 10,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/db/c3/91/dbc3911329b586c69d68d68b0eaf507e.jpg",
+        "category": "Events"
+    },{
+        "id": 11,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/e7/86/dc/e786dc2636be3d446c3669bfd91b5bbf.jpg",
+        "category": "Events"
+    },{
+        "id": 12,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/77/a7/da/77a7da9942aa4a463725b71e65f3ce9b.jpg",
+        "category": "Events"
+    },{
+        "id": 13,
+        "title":"Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/17/2c/1f/172c1fae477bfa2cd2c7b2655165981e.jpg",
+        "category": "Events"
+    },{
+        "id": 14,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/b6/2b/5f/b62b5f29df60de22234eb073114f92ec.jpg",
+        "category": "Events"
+    },{
+        "id": 15,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/b0/11/bc/b011bce00aaf8e385ddddf3cfcb4481b.jpg",
+        "category": "Events"
+    },{
+        "id": 16,
+        "title": "Mugs",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/88/6f/02/886f02e6ca4f7b172f227fe215165032.jpg",
+        "category": "Events"
+    },{
+        "id": 17,
+        "title": "Mugs",
+        "price": "1100",
+        "url": "https://i.pinimg.com/564x/30/34/41/303441bcb2f95979a54c0ad7735d1396.jpg",
+        "category": "Events"
+    },{
+        "id": 18,
+        "title": "Mugs",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/bf/1e/c7/bf1ec72130836ceb925be00570c57e4b.jpg",
+        "category": "Events"
+    },{
+        "id": 19,
+        "title": "Mugs",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/63/90/50/639050d66705070318f76470d271b9cf.jpg",
+        "category": "Events"
+    },{
+        "id": 20,
+        "title": "Mugs",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/78/dd/e6/78dde6acd896700ee4d2171c689e1c78.jpg",
+        "category": "Events"
+    },{
+        "id": 21,
+        "title": "Mugs",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/fa/29/20/fa292073229fdf4b2d48cb93b34a6438.jpg",
+        "category": "Events"
+    },
+    {
+        "id": 22,
+        "title": "Bottles",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/ea/27/3f/ea273f7e6b3c6c71e0b1a4bacee4f4fd.jpg",
+        "category": "Events"
+    },{
+        "id": 23,
+        "title": "Bottles",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/ad/28/c0/ad28c01431da9e9b2a35451bb3609a9a.jpg",
+        "category": "Events"
+    },{
+        "id": 24,
+        "title": "Bottles",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/a2/4b/7e/a24b7e243755d84d936a17832dfa6cb9.jpg",
+        "category": "Events"
+    },{
+        "id": 25,
+        "title": "Bottles",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/fe/15/bb/fe15bbb011e38f9104e749d2ffedf62d.jpg",
+        "category": "Events"
+    },{
+        "id": 26,
+        "title": "Headwear",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/c0/87/2f/c0872f2fb0d0c7b8fb94f4ea5834a0bd.jpg",
+        "category": "Events"
+    },{
+        "id": 27,
+        "title": "Headwear",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/88/49/61/884961d7873d8cea55a4943e967490ff.jpg",
+        "category": "Events"
+    },{
+        "id": 28,
+        "title": "Headwear",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/65/b5/e0/65b5e075f46a8361b329cb97a7250989.jpg",
+        "category": "Events"
+    },{
+        "id": 29,
+        "title": "Headwear",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/b7/a9/e8/b7a9e81fd177c20ef195ebba724c408d.jpg",
+        "category": "Events"
+    },{
+        "id": 30,
+        "title": "Headwear",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/25/ce/65/25ce651cf04cd36957867983e9b5177e.jpg",
+        "category": "Events"
+    },{
+        "id": 31,
+        "title": "Headwear",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/97/a2/3e/97a23ef20d8b4a7feb9d9e57ffe94f89.jpg",
+        "category": "Events"
+    },{
+        "id": 32,
+        "title": "Crop Sweater",
+        "price": "1100",
+        "url": "https://i.pinimg.com/564x/f8/43/4b/f8434b972496c3652e84fe42d288dc98.jpg",
+        "category": "Events"
+    },{
+        "id": 33,
+        "title": "Crop Sweater",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/a8/cc/54/a8cc540bd6ee7b50bfe3d42a3d4b8bdd.jpg",
+        "category": "Events"
+    },{
+        "id": 34,
+        "title": "Crop Sweater",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/da/20/c3/da20c3f641a9d7191a06f0a3ff8e636b.jpg",
+        "category": "Events"
+    },{
+        "id": 35,
+        "title": "Crop Sweater",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/d9/2c/ac/d92cacfaf65fe39ff8c8d9c69839be3e.jpg",
+        "category": "Events"
+    },{
+        "id": 36,
+        "title": "Crop Sweater",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/27/13/90/271390ca81897fb81422431589b73907.jpg",
+        "category": "Events"
+    },{
+        "id": 37,
+        "title": "Crop Sweater",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/b0/a8/8e/b0a88e0a554f1dc20f1caa387395da13.jpg",
+        "category": "Events"
+    },{
+        "id": 38,
+        "title": "Crop Tops",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/2d/9b/26/2d9b26553196648054f5d9cbbb753a4a.jpg",
+        "category": "Events"
+    },{
+        "id": 39,
+        "title": "Crop Tops",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/fd/2d/18/fd2d1846a8fb40ad3b3a896db018e1f0.jpg",
+        "category": "Events"
+    },{
+        "id": 40,
+        "title": "Crop Tops",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/5e/8a/57/5e8a57e22daa0c6a375c2adfb76a4b7f.jpg",
+        "category": "Events"
+    },{
+        "id": 41,
+        "title": "Crop Tops",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/54/31/12/543112d61735e44851c37edff2bee651.jpg",
+        "category": "Events"
+    },{
+        "id": 42,
+        "title": "Crop Tops",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/d1/5f/55/d15f5592533a8c0208ef67ea86aae147.jpg",
+        "category": "Events"
+    },{
+        "id": 43,
+        "title": "Crop Tops",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/33/a6/bb/33a6bb92de80b2f6d6df4d92c8255216.jpg",
+        "category": "Events"
+    },{
+        "id": 44,
+        "title": "Blouse",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/80/20/4a/80204a1489e9910800adb6efbf3aeffd.jpg",
+        "category": "Events"
+    },{
+        "id": 45,
+        "title": "Blouse",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/31/5f/f3/315ff3c49a7935ff267269e002560ac8.jpg",
+        "category": "Events"
+    },{
+        "id": 46,
+        "title": "Blouse",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/80/be/a7/80bea7bd7462ad2548493512c17559a3.jpg",
+        "category": "Events"
+    },{
+        "id": 47,
+        "title": "Blouse",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/cc/ff/32/ccff32221072df4cf7f3416dfb46a498.jpg",
+        "category": "Events"
+    },{
+        "id": 48,
+        "title": "Blouse",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/6a/d7/e1/6ad7e1282ca438be10136d4b5314e5e2.jpg",
+        "category": "Events"
+    }, {
+        "id": 49,
+        "title": "T-Shirt",
+        "price": "1100",
+        "url": "./Images/shirt1.jpg",
+        "category": "Events"
+    },
+    {
+        "id": 50,
+        "title": "T-Shirt",
+        "price": "1100",
+        "url": "./Images/shirt3.jpg",
+        "category": "Events"
+    },
+    {
+        "id": 51,
+        "title": "Cap",
+        "price": "1100",
+        "url": "./Images/cap5.jpg",
+        "category": "Events"
+    },
+    {
+        "id": 52,
+        "title": "Cap",
+        "price": "1100",
+        "url": "./Images/cap2.jpg",
+        "category": "Events"
+    },
+    {
+        "id": 53,
+        "title": "Hood",
+        "price": "1100",
+        "url": "./Images/patrick.jpg",
+        "category": "Events"
+    },{
+        "id": 54,
+        "title": "Hood",
+        "price": "1100",
+        "url": "./Images/spongebob.jpg",
+        "category": "Events"
+    },
+    {
+        "id": 55,
+        "title": "Bag",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/15/50/43/155043ebee51838b69ab0122d46e4d01.jpg",
+        "category": "Events"
+    },{
+        "id": 56,
+        "title": "Bag",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/fb/e2/85/fbe2859af6c1d1fab3d2e816e529b2a2.jpg",
+        "category": "Events"
+    },{
+        "id": 57,
+        "title": "Bag",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/57/02/49/570249b850e97d410e24b08cf33ed18c.jpg",
+        "category": "Events"
+       
+    },{
+        "id": 58,
+        "title": "Bag",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/59/a1/15/59a11557cb1d47d1fdbd9aae7761e13b.jpg",
+        "category": "Events"
+    },
+    // Corporate Gifts
+    {
+        "id": 1,
+        "title": "Bottles",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/ea/27/3f/ea273f7e6b3c6c71e0b1a4bacee4f4fd.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id":2,
+        "title": "Bottles",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/ad/28/c0/ad28c01431da9e9b2a35451bb3609a9a.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id": 3,
+        "title": "Bottles",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/a2/4b/7e/a24b7e243755d84d936a17832dfa6cb9.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id": 4,
+        "title": "Bottles",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/fe/15/bb/fe15bbb011e38f9104e749d2ffedf62d.jpg",
+        "category": "Corporate Gifts"
+    },
+    {
+        "id": 5,
+        "title": "Mugs",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/88/6f/02/886f02e6ca4f7b172f227fe215165032.jpg",
+        "category": "Corporate Gifts"
+    },,{
+        "id": 11,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/f5/2a/53/f52a5365a4380461d53fcdf55d079d0d.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id": 12,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/fb/e3/06/fbe306fa0bfcd0a1de9b3c3d5c5a31e1.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id": 13,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/bc/f0/f4/bcf0f4129505a08fda350adfe158d019.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id": 14,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/c4/9d/b5/c49db5c6d621d3d4f5b891f6233f354f.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id": 15,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/db/c3/91/dbc3911329b586c69d68d68b0eaf507e.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id": 16,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/e7/86/dc/e786dc2636be3d446c3669bfd91b5bbf.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id": 17,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/77/a7/da/77a7da9942aa4a463725b71e65f3ce9b.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id": 18,
+        "title":"Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/17/2c/1f/172c1fae477bfa2cd2c7b2655165981e.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id": 19,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/b6/2b/5f/b62b5f29df60de22234eb073114f92ec.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id": 20,
+        "title": "Notebooks",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/b0/11/bc/b011bce00aaf8e385ddddf3cfcb4481b.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id": 21,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/d0/4d/b7/d04db7869c8ca5691bfdb17a0407749e.jpg",
+        "category": "Corporate Gifts"
+    },
+    {
+        "id": 22,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/48/7c/8b/487c8b6f92c6b35f68a818b09a097783.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id": 23,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/e7/15/eb/e715ebfec08f4cceef84d3001d41c8ac.jpg",
+        "category": "Corporate Gifts"
+    },{
+        "id": 24,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/3b/75/65/3b756521cbdcc06fdfd8d2ded13dac52.jpg",
+        "category": "Corporate Gifts"
+    },
+    {
+        "id": 25,
+        "title": "Pens",
+        "price": "1100",
+        "url": "https://i.pinimg.com/474x/6e/c7/ee/6ec7eeb2829f59f9a724742965b2e791.jpg",
+        "category": "Corporate Gifts"
+    },
+  
+    
+    // Branding Basics
+    {
+        "id": 1,
+        "title": "T-Shirt",
+        "price": "1100",
+        "url": "./Images/shirt1.jpg",
+        "category": "Branding Basics"
+    },
+    {
+        "id": 2,
+        "title": "T-Shirt",
+        "price": "1100",
+        "url": "./Images/shirt7.jpg",
+        "category": "Branding Basics"
+    },
+    {
+        "id": 3,
+        "title": "Cap",
+        "price": "1100",
+        "url": "./Images/cap2.jpg",
+        "category": "Branding Basics"
+    },
+    {
+        "id": 4,
+        "title": "Cap",
+        "price": "1100",
+        "url": "./Images/cap5.jpg",
+        "category": "Branding Basics"
+    },{
+        "id": 5,
+        "title": "Hood",
+        "price": "1100",
+        "url": "./Images/frozen.jpg",
+        "category": "Branding Basics"
+    },{
+        "id": 6,
+        "title": "Hood",
+        "price": "1100",
+        "url": "./Images/patrick.jpg",
+        "category": "Branding Basics"
+    },{
+        "id": 7,
+        "title": "Hood",
+        "price": "1100",
+        "url": "./Images/spongebob.jpg",
+        "category": "Branding Basics"
+    }
+    
+
+];
+
+
+
+
+
+
+
+
+// Function to filter products by category
+function filterProducts(category) {
+    const productsContainer = document.getElementById('products-container');
+    productsContainer.innerHTML = ''; // Clear the container
+
+    const filteredProducts = products.filter(product => product.category === category);
+
+    filteredProducts.forEach(product => {
+        const productDiv = document.createElement('div');
+        productDiv.classList.add('product');
+        
+        productDiv.innerHTML = `
+            <div class="top d-flex">
+                <img src="${product.url}" alt="${product.title}" />
+                <div class="icon d-flex">
+                  
+                </div>
+            </div>
+            <div class="bottom">
+                <h4>${product.title}</h4>
+                <div class="d-flex">
+                    <div class="price">KES ${product.price}</div>
+                   
+                </div>
+            </div>
+        `;
+        
+        productsContainer.appendChild(productDiv);
+    });
+    
+}
+</script>
+<script src="scripts.js"></script>
+
+
+
+</body>
+</html>

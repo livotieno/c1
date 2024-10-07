@@ -1,0 +1,1118 @@
+p{
+    line-height: 3rem;
+    font-size: 1.3rem;
+}
+
+.header{
+    background-color: black;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 120rem;
+    padding: 0 3rem;
+    margin: auto;
+  
+}
+
+@media (min-width:1600px){
+    .container{
+        max-width: 160rem;
+    }
+}
+
+@media (max-width:567){
+    .container{
+        padding: 0 1rem;
+    }
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    margin-bottom: 4rem;
+    
+}
+
+.header .navbar{
+    padding: 2.5rem 0;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+}
+
+.header .navbar .row{
+    justify-content: space-between;
+}
+
+.header .navbar .row .nav-list a{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+}
+
+.header .navbar .row .nav-list a.user-link{
+    display: none;
+}
+
+.header .navbar .row .nav-list a:not(:last-child){
+    margin-right: 0.5rem;
+}
+
+.header .navbar .row .nav-list a:hover{
+    color: rgb(199, 176, 117);
+}
+
+.header .hamburger,
+.header .close {
+    display: none;
+}
+
+@media (min-width:1600px){
+    .header .navbar{
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width:768px){
+    .header .navbar .row .icons {
+        padding: 4rem 0;
+    }
+    .header .navbar .row .nav-list{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-width: 35rem;
+        height: 100%;
+        background-color: rgb(145,126,80);
+        z-index: 1000;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 4rem 1rem;
+        transition: 0.5s;
+    }
+    .header .navbar .row .nav-list a{
+        font-size: 1.8rem;
+    }
+    .header .navbar .row .nav-list a:not(:last-child){
+        margin: 0 0 1rem 0;
+    }
+    .header .navbar .row .nav-list .close{
+        display: block;
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        color: black;
+        font-size: 3rem;
+    }
+    .header .navbar .row .nav-list.show{
+        right: 0;
+    }
+    .header .navbar .row .hamburger{
+        display: block;
+        font-size: 3rem;
+        color: white;
+    }
+}
+
+.header .hero{
+    height: 80vh;
+    margin: 0 3rem;
+}
+.header .hero .row{
+    height: 100%;
+    background: url("./Images/L2.jpg");
+    border-radius: 2rem;
+    position: relative;
+}
+.header .hero .row .col{
+    margin-left: 5rem;
+}
+.header .hero .row .col h1{
+    font-family: "";
+    line-height: 1;
+}
+.header .hero .row img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width: 1600px){
+    .header .hero .row img{
+        width: 40rem;
+    }
+}
+
+@media(max-width: 1200px){
+    .header .hero .row .col h1{
+        font-size: 8rem;
+    }
+}
+
+@media(max-width: 768px){
+    .header .hero .row .col {
+        position: absolute;
+        top: 10%;
+        margin-left: 0;
+    }
+    header .hero .row .col h2{
+        font-size: 2rem;
+    }
+    .header .hero .row .col h1{
+        font-size: 3rem;
+    }
+    .header .hero .row .col p{
+        font-size: 1.1rem;
+        line-height: 1rem;
+    }
+}
+
+@media (max-width: 567px) {
+    .header .hero{
+        height: 100vh;
+        margin: 0 1rem;
+    }
+    .header .hero .row .col h1{
+        font-size: 5rem;
+    }
+    .header .hero .row .col p{
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    .header .hero .row img{
+        width: 25rem;
+    }
+}
+
+.section .title{
+    text-align: center;
+    margin-bottom: 5rem;
+    
+}
+.section .title span{
+    display: inline-block;
+    border-bottom: 3px solid rgb(145,126,80);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.section .title span::before{
+    content: "";
+    position: absolute;
+    bottom: -0.7rem;
+    right: 2rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: rgb(145,126,80);
+}
+.section .title h2{
+    font-size: 2rem;
+}
+
+.collection .filters{
+    justify-content: center;
+    margin: 7rem;
+}
+.collection .filters div{
+    padding: 1.7rem 4rem;
+    color: black;
+    font-size: 1.7rem;
+    border-radius: 0.8rem;
+    box-shadow: rgb(145,126,80);
+    cursor: pointer;
+}
+
+.collection .filters div:not(:last-child){
+    margin-right: 4rem;
+}
+
+.collection .filters div:hover,
+.collection .filters div.active{
+    background: rgb(145,126,80);
+    color:black;
+    box-shadow: rgb(145,126,80);
+}
+
+.collection .products .swiper-wrapper{
+    padding: 0 0 1.5rem;
+}
+.collection .products .product{
+    border-radius: 2.5rem;
+    box-shadow: rgb(145,126,80);
+    overflow: hidden;
+}
+.collection .products .product .top{
+    background: black;
+    height: 30rem;
+    justify-content: center;
+    position: relative;
+}
+.collection .products .product .top img{
+    height: 25rem;
+}
+.collection .products .product .top .icon{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.collection .products .product .top:hover .icon{
+    opacity: 1;
+    visibility: visible;
+}
+
+.collection .products .product .bottom{
+    padding: 1.5rem 1rem;
+}
+
+.collection .products .product .bottom h4{
+    font-size: 1.8rem;
+    width: 80%;
+    height: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.collection .products .product .bottom .d-flex{
+    justify-content: space-between;
+}
+
+.collection .products .product .bottom .price{
+    color: rgb(145,126,80);
+    background-color: black;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.collection .products .product .bottom .rating{
+    color: rgb(145,126,80);
+}
+
+.collection .products .product .bottom .rating i:not(:last-child){
+    margin-right: 0.3rem;
+}
+
+.collection .products .pagination{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.collection .products .pagination .swiper-pagination-bullet{
+background-color: black;
+height: 1rem;
+width: 1rem;
+}
+.collection .products .pagination .swiper-pagination-bullet-active{
+    width: 3rem;
+    border-radius: 1.5rem;
+}
+
+@media (max-width:1600px){
+    .collection .products .product .top{
+        height: 35rem;
+    }
+}
+
+@media (max-width:768px){
+    .collection .filters{
+        margin-bottom: 7rem;
+    }
+    .collection .filters div{
+        padding: 1.2rem 2.5rem;
+        font-size: 1.6rem;
+    }
+    .collection .filters div:not(:last-child){
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 567px){
+    .collection .filters{
+        flex-wrap: wrap;
+    }
+    .collection .filters div{
+        padding: .7rem 1rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .collection .filters div:not(:last-child){
+        margin-right: 1rem;
+    }
+}
+
+.new-arrival .row{
+    display: grid;
+}
+.new-arrival .row .col{
+    position: relative;
+    padding: 1rem;
+}
+.new-arrival .row .col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.new-arrival .row .col-1,
+.new-arrival .row .col-2 {
+    grid-column: 1;
+}
+
+.new-arrival .row .col-3{
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.new-arrival .row .col h3{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: black;
+    font-size: 2rem;
+    line-height: 3.0rem;
+}
+
+.new-arrival .row .col h3 span{
+    display: block;
+    margin-top: 3rem;
+}
+
+@media (max-width: 967px){
+    .new-arrival .row .col h3{
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    .new-arrival .row{
+        display: block;
+    }
+
+    .new-arrival .row .col h3{
+        bottom: 15%;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+.footer{
+    background-color: white;
+    padding: 5rem 3rem 5rem;
+    margin-top: 7rem;
+}
+
+
+@media (max-width: 1200px){
+    .footer .row .col:first-child{
+        display: none;
+    }
+    .footer .row{
+        display: block;
+    }
+}
+@media (max-width: 768px){
+    .footer .row .col:last-child{
+        grid-template-columns: 1fr;
+        gap: 3rem 0;
+    }
+}
+h1{
+    color: white;
+}
+header{
+    color: white;
+    font-size: larger;
+}
+/* header{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.0%);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.nav-list {
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.0%);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-list:hover{
+    transform: scale(1.05);
+} */
+.hoodies {
+    display: flex;
+    justify-content: flex-start; /* Align items from left to right */
+    gap: 40px; /* Space between images */
+    flex-wrap: wrap; /* Allows wrapping to the next line if there are too many images */
+    
+}
+
+.hood1 img,
+.hood2 img,
+.hood3 img,
+.hood4 img,
+.hood5 img,
+.hood6 img,
+.hood7 img,
+.hood8 img,
+.hood9 img
+{
+    width: 200px; /* Set the desired width for each image */
+    height: 200px; /* Set the desired height for each image */
+    object-fit: cover; /* Ensures the images cover the area without distortion */
+    border-radius: 5px; /* Optional: adds a slight border radius */
+}
+.hoodies p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    
+}
+
+
+.shirts {
+    display: flex;
+    justify-content: flex-start; /* Align items from left to right */
+    gap: 40px; /* Space between images */
+    flex-wrap: wrap; /* Allows wrapping to the next line if there are too many images */
+}
+.shirt1 img,
+.shirt2 img,
+.shirt3 img,
+.shirt4 img,
+.shirt5 img,
+.shirt6 img,
+.shirt7 img
+{
+    width: 200px; /* Set the desired width for each image */
+    height: 200px; /* Set the desired height for each image */
+    object-fit: cover; /* Ensures the images cover the area without distortion */
+    border-radius: 5px; /* Optional: adds a slight border radius */
+}
+.shirts p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    
+}
+
+
+.caps {
+    display: flex;
+    justify-content: flex-start; /* Align items from left to right */
+    gap: 40px; /* Space between images */
+    flex-wrap: wrap; /* Allows wrapping to the next line if there are too many images */
+}
+.cap1 img,
+.cap2 img,
+.cap3 img,
+.cap4 img,
+.cap5 img,
+.cap6 img,
+.cap7 img
+
+{
+    width: 200px; /* Set the desired width for each image */
+    height: 200px; /* Set the desired height for each image */
+    object-fit: cover; /* Ensures the images cover the area without distortion */
+    border-radius: 5px; /* Optional: adds a slight border radius */
+}
+.caps p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    
+}
+
+.design-ideas-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    justify-items: center; /* Center items horizontally */
+    padding: 20px;
+}
+
+#design-ideas-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#design-ideas-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusts columns based on screen size */
+    gap: 10px; /* Space between items */
+    width: 100%;
+}
+
+#design-ideas-list a {
+    text-decoration: none;
+    color: #333; /* Set link color */
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional: Add border */
+    border-radius: 5px; /* Optional: Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#design-ideas-list a:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+    color: #000; /* Change text color on hover */
+}
+
+/* Container for the contact section */
+#contacts {
+    background-color: #f8f9fa; /* Light background for a clean look */
+    padding: 40px 20px; /* Generous padding */
+    border-radius: 10px; /* Rounded corners for a softer appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the section */
+    text-align: center; /* Center text */
+}
+
+/* Title styling */
+#contacts h4 {
+    font-size: 1.8rem; /* Slightly larger font size for prominence */
+    font-weight: bold; /* Bold for emphasis */
+    color: #333; /* Dark color for text */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Flex container for contact items */
+.d-flex {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 15px; /* Space between items */
+}
+
+/* Icon styling */
+.icon {
+    font-size: 1.5rem; /* Larger icon size */
+    color: #007bff; /* Primary color for the icon */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Contact text styling */
+#contacts span {
+    font-size: 1.2rem; /* Slightly larger text */
+    color: #555; /* Medium-dark color for text */
+    display: block; /* Display text in a block format */
+}
+
+/* Additional styling for phone numbers */
+#contacts .d-flex span:nth-of-type(2) {
+    margin-top: 5px; /* Space between phone numbers */
+}
+body{
+    background-color: #000;
+}
+#design-ideas-title{
+    color: white;
+}
+#caps{
+    color: white;
+}
+#shirts{
+    color: white;
+}
+#hood{
+    color:white;
+}
+.title{
+    color: white;
+     padding-top: 40px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.flex-container div {
+    flex: 1 1 calc(33.333% - 20px); /* Each item takes up roughly 1/3 of the container width */
+    box-sizing: border-box;
+}
+
+.flex-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-container p {
+    margin: 10px 0;
+    text-align: center; /* Center the text under the images */
+}
+
+.flex-container button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(199, 176, 177);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px; /* Adjust the space between items */
+}
+
+.flex-container > div {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust the percentage for the number of items per row */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.flex-container img {
+    width: 15%;
+    height: auto;
+}
+
+.flex-container p, 
+.flex-container button {
+    margin: 10px 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Adjusts the spacing between items */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+}
+
+.flex-container > div {
+    flex: 1; /* Allows each item to grow and fill available space */
+    margin: 10px; /* Adds spacing around each item */
+    max-width: 30%; /* Ensures the items don't get too wide */
+}
+
+.flex-container img {
+    width: 100%; /* Makes the images responsive */
+    height: auto;
+}
+
+.flex-container p, .flex-container button {
+    text-align: center; /* Centers the text and button under the image */
+    margin-top: 10px; /* Adds space between the image and the text/button */
+}
+
+.title p {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.section.new-arrival .title span {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Style for the products container */
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Style for individual product items */
+.product {
+    width: 23%; /* Adjust based on the number of products per row */
+    min-height: 350px; /* Ensures a consistent height */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Style for product images */
+.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 200px; /* Sets a maximum height for images */
+    margin-bottom: 15px;
+}
+
+/* Style for the product title and price */
+.product .bottom {
+    flex-grow: 1;
+}
+
+.product h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product .price {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Ensures that each row of products is aligned */
+.product .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Rating stars style */
+.product .rating i {
+    color: #ffd700;
+    margin-right: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .product {
+        width: 48%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%;
+    }
+}
+.hidden {
+    display: none;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.shirts div {
+    margin: 10px;
+    text-align: center;
+}
+img {
+    max-width: 200px;
+    height: auto;
+}
+button {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+}
+.shirts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between items */
+}
+
+.shirt1 {
+    flex: 1 1 calc(33.333% - 1rem); /* Adjusts to fit three items per row with gap */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px; /* Set a fixed height for the container */
+    border: 1px solid #ddd;
+    padding: 10px;
+   
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.shirt1:hover {
+    transform: translateY(-5px);
+}
+
+.shirt1 img {
+    width: 100%;
+    height: 250px; /* Fixed height for images */
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.shirt1 p, .shirt1 button {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.shirt1 p {
+    font-weight: bold;
+}
+
+.shirt1 button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shirt1 button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+/* Styles for the title/toggle section */
+.title {
+    cursor: pointer;
+    padding: 10px;
+   
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.title p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+/* Container for hoodie items */
+.hoodies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between items */
+}
+
+.hood {
+    flex: 1 1 calc(33.333% - 1rem); /* Adjusts to fit three items per row with gap */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px; /* Set a fixed height for the container */
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.hood:hover {
+    transform: translateY(-5px);
+}
+
+.hood img {
+    width: 100%;
+    height: 250px; /* Fixed height for images */
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.hood p, .hood button {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.hood p {
+    font-weight: bold;
+}
+
+.hood button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hood button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+/* Styles for the title/toggle section */
+.title {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.title p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Each cap item styling */
+.cap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px; /* Set a fixed height for the container */
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.cap:hover {
+    transform: translateY(-5px);
+}
+
+.cap img {
+    width: 100%;
+    height: 250px; /* Fixed height for images */
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.cap p, .cap button {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.cap p {
+    font-weight: bold;
+}
+
+.cap button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+
+}
+
+.cap button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+/* Style the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 10px; /* Gap between the grid items */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+/* Place the grid items */
+.grid-container .title:nth-child(1) {
+    grid-column: 1 / 2; /* First column, first row */
+}
+
+.grid-container .title:nth-child(2) {
+    grid-column: 2 / 3; /* Second column, first row */
+}
+
+.grid-container .title:nth-child(3) {
+    grid-column: 1 / 3; /* Span both columns on the second row */
+    justify-self: center; /* Center the T-Shirts text */
+    text-align: center;
+}
+
+/* Optional styles to make the links look more clickable */
+.grid-container .title {
+    
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+}
+
+/* Responsive behavior (optional) */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack the columns on small screens */
+        grid-template-rows: auto auto auto;
+    }
+
+    .grid-container .title:nth-child(3) {
+        grid-column: 1 / 2; /* T-Shirts on its own row */
+    }
+}
+
+ 
+
+

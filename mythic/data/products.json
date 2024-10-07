@@ -1,0 +1,130 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "title": "T-Shirts",
+            "price":"1100",
+            "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt1.jpg",
+            "category" : "Promotional Merchandise"
+        },
+        {
+            "id": 2,
+            "title": "T-Shirts",
+            "price":"1100",
+            "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+            "category" : "Promotional Merchandise"
+        },
+        {
+            "id": 3,
+            "title": "T-Shirts",
+            "price":"1100",
+            "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+            "category" : "Promotional Merchandise"
+        },
+        {
+            "id": 4,
+            "title": "T-Shirts",
+            "price":"1100",
+            "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+            "category" : "Promotional Merchandise"
+        },
+        {
+            "id": 5,
+            "title": "T-Shirts",
+            "price":"1100",
+            "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+            "category" : "Promotional Merchandise"
+        },
+        {
+            "id": 6,
+            "title": "T-Shirts",
+            "price":"1100",
+            "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+            "category" : "Promotional Merchandise"
+        },
+        {
+            "id": 7,
+            "title": "T-Shirts",
+            "price":"1100",
+            "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+            "category" : "Promotional Merchandise"
+        },
+        {
+            "id": 8,
+            "title": "T-Shirts",
+            "price":"1100",
+            "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+            "category" : "Promotional Merchandise"
+        },
+        {
+            "id": 9,
+            "title": "T-Shirts",
+            "price":"1100",
+            "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+            "category" : "Promotional Merchandise"
+        },
+        {
+            "id": 10,
+            "title": "T-Shirts",
+            "price":"1100",
+            "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+            "category" : "Promotional Merchandise"
+      }, 
+      {
+        "id": 11,
+        "title": "Bags",
+        "price":"1100",
+        "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+        "category" : "Promotional Merchandise"
+      },
+      {
+        "id": 12,
+        "title": "Bags",
+        "price":"1100",
+        "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+        "category" : "Promotional Merchandise"
+      }, {
+        "id": 13,
+        "title": "Bags",
+        "price":"1100",
+        "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+        "category" : "Promotional Merchandise"
+      }, {
+        "id": 14,
+        "title": "Bags",
+        "price":"1100",
+        "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+        "category" : "Promotional Merchandise"
+      },
+      {
+        "id": 15,
+        "title": "Bags",
+        "price":"1100",
+        "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+        "category" : "Promotional Merchandise"
+      },
+      {
+        "id": 16,
+        "title": "Bags",
+        "price":"1100",
+        "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+        "category" : "Promotional Merchandise"
+      },
+      {
+        "id": 17,
+        "title": "Bags",
+        "price":"1100",
+        "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+        "category" : "Promotional Merchandise"
+      }, {
+        "id": 18,
+        "title": "Blouses",
+        "price":"1100",
+        "url": "/mnt/c/Users/tric/Desktop/coders/mythic/Images/shirt2.jpg",
+        "category" : "Promotional Merchandise"
+      }
+
+
+
+    ]
+}
